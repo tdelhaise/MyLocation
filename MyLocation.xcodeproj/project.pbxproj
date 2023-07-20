@@ -14,6 +14,7 @@
 		1FC4A58A2A67FCC400F08DE1 /* MyLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4A5892A67FCC400F08DE1 /* MyLocationTests.swift */; };
 		1FC4A5942A67FCC400F08DE1 /* MyLocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4A5932A67FCC400F08DE1 /* MyLocationUITests.swift */; };
 		1FC4A5962A67FCC400F08DE1 /* MyLocationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4A5952A67FCC400F08DE1 /* MyLocationUITestsLaunchTests.swift */; };
+		1FC4A5A42A68472600F08DE1 /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4A5A32A68472600F08DE1 /* LocationDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		1FC4A58F2A67FCC400F08DE1 /* MyLocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC4A5932A67FCC400F08DE1 /* MyLocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationUITests.swift; sourceTree = "<group>"; };
 		1FC4A5952A67FCC400F08DE1 /* MyLocationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1FC4A5A22A68446400F08DE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1FC4A5A32A68472600F08DE1 /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +97,12 @@
 		1FC4A5772A67FCC300F08DE1 /* MyLocation */ = {
 			isa = PBXGroup;
 			children = (
+				1FC4A5A22A68446400F08DE1 /* Info.plist */,
 				1FC4A5782A67FCC300F08DE1 /* MyLocationApp.swift */,
 				1FC4A57A2A67FCC300F08DE1 /* ContentView.swift */,
 				1FC4A57C2A67FCC400F08DE1 /* Assets.xcassets */,
 				1FC4A57E2A67FCC400F08DE1 /* Preview Content */,
+				1FC4A5A32A68472600F08DE1 /* LocationDataManager.swift */,
 			);
 			path = MyLocation;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FC4A57B2A67FCC300F08DE1 /* ContentView.swift in Sources */,
+				1FC4A5A42A68472600F08DE1 /* LocationDataManager.swift in Sources */,
 				1FC4A5792A67FCC300F08DE1 /* MyLocationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,9 +426,14 @@
 				DEVELOPMENT_TEAM = SB7H9B6TY8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyLocation/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "\"Always and When in Use Usgae\"";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "\"Always in use Description\"";
+				INFOPLIST_KEY_NSLocationUsageDescription = "\"We use location to improve WIFI accuracy\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "location-services accelerometer gps magnetometer";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -449,9 +460,14 @@
 				DEVELOPMENT_TEAM = SB7H9B6TY8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyLocation/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "\"Always and When in Use Usgae\"";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "\"Always in use Description\"";
+				INFOPLIST_KEY_NSLocationUsageDescription = "\"We use location to improve WIFI accuracy\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "location-services accelerometer gps magnetometer";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
